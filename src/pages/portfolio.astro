@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/BaseLayout.astro";
+import ImageSlider from "../components/ImageSlider.jsx";
+
+---
+
+<Layout>
+  <section class="w-full flex flex-col items-center px-4 py-20">
+    <!-- Title and Description -->
+    <div class="text-center max-w-[800px]">
+      <h1 class="title text-[36px] font-bold text-[#070441] underline decoration-[#4559b5]">
+        Inspiration for your next renovation
+      </h1>
+      <p class="description mt-4 text-[16px] text-[#070441]">
+        At Emag Contracting, we've had the privilege of transforming many homes in Cuenca and its surroundings. Each project is an opportunity to showcase our creativity, quality, and commitment to our clients. Here are some of our recent works to inspire you.
+      </p>
+    </div>
+
+    <!-- Imported Slider -->
+    <div class="slider-container">
+      <ImageSlider client:load />
+    </div>
+  </section>
+
+  <script>
+    import { gsap } from "gsap";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Animación para el título
+      gsap.from(".title", {
+        opacity: 0,
+        y: -50,
+        duration: 1.5,
+        ease: "power4.out",
+      });
+
+      // Animación para la descripción
+      gsap.from(".description", {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        ease: "power2.out",
+        delay: 0.3,
+      });
+
+      // Animación para el slider
+      gsap.from(".slider-container", {
+        opacity: 0,
+        scale: 0.9,
+        duration: 1.2,
+        ease: "power3.out",
+        delay: 0.5,
+      });
+    });
+  </script>
+</Layout>

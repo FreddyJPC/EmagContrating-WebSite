@@ -1,0 +1,58 @@
+<header class="w-full bg-[#F7F7F7] fixed top-0 left-0 z-50 shadow-md lg:static lg:bg-transparent lg:shadow-none">
+
+
+  <div class="container mx-auto flex items-center justify-between h-[70px] max-w-[1360px] px-4">
+    <!-- Logo -->
+    <a href="/" class="text-textPrimary text-[24px] font-bold">
+      EMAG CONTRACTING
+    </a>
+
+    <!-- Navigation for desktop -->
+    <nav class="hidden md:flex space-x-8">
+      <a href="/about" class="text-textSecondary text-[16px] hover:underline">About</a>
+      <a href="/portfolio" class="text-textSecondary text-[16px] hover:underline">Portfolio</a>
+      <a href="/contact" class="text-textSecondary text-[16px] hover:underline">Contact Us</a>
+    </nav>
+
+    <!-- Hamburger menu button -->
+    <button id="menu-toggle" class="md:hidden">
+      <img src="/src/assets/Toggle_menu.svg" alt="Open menu" />
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden bg-[#F7F7F7] shadow-lg">
+    <nav class="flex flex-col items-center space-y-2 p-4">
+      <a href="/about" class="text-textSecondary text-[16px] hover:text-textPrimary">About</a>
+      <a href="/portfolio" class="text-textSecondary text-[16px] hover:text-textPrimary">Portfolio</a>
+      <a href="/contact" class="text-textSecondary text-[16px] hover:text-textPrimary">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('animate-slide-down');
+  });
+</script>
+
+<style>
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-down {
+    animation: slide-down 0.3s ease-in-out;
+  }
+</style>

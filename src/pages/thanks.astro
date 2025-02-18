@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/BaseLayout.astro";
+
+---
+
+<Layout>
+  <div class="flex items-center justify-center min-h-screen py-10 px-4">
+    <div class="max-w-4xl text-center space-y-10">
+      
+      <div class="thank-title">
+        <h1 class="lg:text-7xl text-[40px] font-bold text-[#070441]">
+          Thank you for contacting us!
+        </h1>
+      </div>
+
+      <div class="thank-message">
+        <p class="text-lg sm:text-xl font-bold text-gray-700">
+          We will get back to you as soon as possible.
+        </p>
+      </div>
+
+      <div class="py-2 px-6 bg-[#4559b5] text-white rounded-lg">
+        <p class="text-md sm:text-lg font-semibold">
+          Your message is important to us.
+        </p>
+      </div>
+
+      <div class="thank-button py-2 mt-2">
+        <button 
+          onclick="window.location.href='/'" 
+          class="bg-[#070441] text-white py-3 rounded-[20px] font-semibold hover:bg-[#1B6475] transition"
+          style="width: 112px;">
+          Return
+        </button>
+      </div>
+    </div>
+  </div>
+</Layout>

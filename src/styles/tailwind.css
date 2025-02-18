@@ -1,0 +1,23 @@
+/* src/styles/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .stroke-text {
+    -webkit-text-stroke: 1px #070441; /* Contorno azul oscuro */
+    color: white; /* Texto blanco */
+  }
+  
+}
+
+
+.service-card {
+  @apply w-[320px] h-[125px] border-[1px] border-[#E0D5C4] flex items-center px-[16px] transition-transform duration-300 ease-in-out;
+}
+
+.service-card:hover {
+  @apply scale-105;
+}
+
+

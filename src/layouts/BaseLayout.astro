@@ -1,0 +1,35 @@
+---
+// BaseLayout.astro
+import "../styles/tailwind.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EmagContrating</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <body 
+    class="font-sans"
+    style="
+background-color:hsla(0,0%,90%,1);
+background-image:
+radial-gradient(at 100% 57%, hsla(240,34%,65%,1) 0px, transparent 50%),
+radial-gradient(at 0% 56%, hsla(240,33%,65%,1) 0px, transparent 50%);
+    "
+  >
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

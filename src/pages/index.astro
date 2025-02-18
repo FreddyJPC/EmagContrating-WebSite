@@ -1,0 +1,617 @@
+---
+import Layout from "../layouts/BaseLayout.astro";
+---
+
+<Layout>
+    <section class="flex justify-center mt-10 px-4 py-16 lg:py-4">
+        <!-- Contenedor principal -->
+        <div
+            class="relative bg-white rounded-[20px] max-w-[1280px] w-full h-auto lg:h-[520px] flex flex-col lg:flex-row overflow-hidden"
+        >
+            <!-- Lado izquierdo -->
+            <div
+                class="lg:w-[775px] w-full bg-[#4559b5] relative flex flex-col justify-center pl-10 py-10 lg:py-0"
+            >
+                <!-- SVG de mosaico -->
+                <img
+                    src="/src/assets/mosaico.svg"
+                    alt="Mosaic"
+                    class="absolute inset-0 w-full h-full object-cover opacity-50"
+                />
+
+                <!-- Texto -->
+                <div class="relative z-10">
+                    <h1
+                        class="title text-[40px] lg:text-[55px] font-bold text-white leading-tight underline decoration-[#070441]"
+                    >
+                        <span class="stroke-text text-white"
+                            >Give your home</span
+                        >
+                        <br />
+                        <span>a makeover</span>
+                        <br />
+                        <span>it deserves</span>
+                    </h1>
+
+                    <!-- Botón -->
+                    <a
+                        href="/contact"
+                        class="cta-button mt-8 inline-block bg-[#070441] text-white font-medium text-[14px] rounded-[32px] w-[175px] h-[50px] flex items-center justify-center transition hover:bg-[#1A1B50]"
+                    >
+                        Get a quote
+                    </a>
+                </div>
+            </div>
+
+            <!-- Lado derecho -->
+            <div
+                class="lg:w-[503px] w-full h-[300px] lg:h-full h-full hidden sm:block"
+            >
+                <img
+                    src="/src/assets/index1.png"
+                    alt="Home Renovation"
+                    class="image w-full h-full object-cover"
+                />
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full flex justify-center items-center mt-10 py-10 px-4">
+        <div class="text-center max-w-[900px]">
+            <h2
+                class="headline text-[24px] lg:text-[35px] font-bold text-[#070441] leading-tight"
+            >
+                We combine <span class="underline decoration-[#4559b5]"
+                    >experience</span
+                > and
+                <span class="underline decoration-[#4559b5]">passion</span> to create
+                beautiful and durable exteriors.
+            </h2>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="flex justify-center mt-10">
+        <div class="w-full max-w-[1280px] h-[2px] bg-[#E0D5C4]"></div>
+    </div>
+
+    <!-- Espacio extra -->
+    <div class="mt-[80px]"></div>
+
+    <!-- Sección de Servicios -->
+    <section
+        class="w-full h-auto flex flex-col items-center pb-[40px] lg:h-[600px]"
+    >
+        <!-- Título -->
+        <h2
+            class="services-title text-[22px] font-bold text-[#070441] mb-[40px]"
+        >
+            Our Services
+        </h2>
+
+        <!-- Cuadrícula -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[16px]">
+            <!-- Elementos de la cuadrícula -->
+            <div
+                class="service-card bg-[#F7F7F7] shadow-md rounded-[22px] p-6 flex items-center"
+            >
+                <img
+                    src="/src/assets/uno.svg"
+                    alt="Service Icon"
+                    class="w-[40px] h-[40px]"
+                />
+                <p class="ml-[20px] text-[16px] font-semibold text-[#2E2E2E]">
+                    Carpentry
+                </p>
+            </div>
+            <div
+                class="service-card bg-[#F7F7F7] shadow-md rounded-[22px] p-6 flex items-center"
+            >
+                <img
+                    src="/src/assets/services2.svg"
+                    alt="Service Icon"
+                    class="w-[40px] h-[40px]"
+                />
+                <p class="ml-[20px] text-[16px] font-semibold text-[#2E2E2E]">
+                    Plumbing
+                </p>
+            </div>
+            <div
+                class="service-card bg-[#F7F7F7] shadow-md rounded-[22px] p-6 flex items-center"
+            >
+                <img
+                    src="/src/assets/services3.svg"
+                    alt="Service Icon"
+                    class="w-[40px] h-[40px]"
+                />
+                <p class="ml-[20px] text-[16px] font-semibold text-[#2E2E2E]">
+                    Electricity
+                </p>
+            </div>
+            <div
+                class="service-card bg-[#F7F7F7] shadow-md rounded-[22px] p-6 flex items-center"
+            >
+                <img
+                    src="/src/assets/services4.svg"
+                    alt="Service Icon"
+                    class="w-[40px] h-[40px]"
+                />
+                <p class="ml-[20px] text-[16px] font-semibold text-[#2E2E2E]">
+                    Roofing
+                </p>
+            </div>
+            <div
+                class="service-card bg-[#F7F7F7] shadow-md rounded-[22px] p-6 flex items-center"
+            >
+                <img
+                    src="/src/assets/services5.svg"
+                    alt="Service Icon"
+                    class="w-[40px] h-[40px]"
+                />
+                <p class="ml-[20px] text-[16px] font-semibold text-[#2E2E2E]">
+                    Painting
+                </p>
+            </div>
+            <div
+                class="service-card bg-[#F7F7F7] shadow-md rounded-[22px] p-6 flex items-center"
+            >
+                <img
+                    src="/src/assets/services6.svg"
+                    alt="Service Icon"
+                    class="w-[40px] h-[40px]"
+                />
+                <p class="ml-[20px] text-[16px] font-semibold text-[#2E2E2E]">
+                    Tiling
+                </p>
+            </div>
+            <div
+                class="service-card bg-[#F7F7F7] shadow-md rounded-[22px] p-6 flex items-center"
+            >
+                <img
+                    src="/src/assets/services1.svg"
+                    alt="Service Icon"
+                    class="w-[40px] h-[40px]"
+                />
+                <p class="ml-[20px] text-[16px] font-semibold text-[#2E2E2E]">
+                    Landscaping
+                </p>
+            </div>
+            <div
+                class="service-card bg-[#F7F7F7] shadow-md rounded-[22px] p-6 flex items-center"
+            >
+                <img
+                    src="/src/assets/services7.svg"
+                    alt="Service Icon"
+                    class="w-[40px] h-[40px]"
+                />
+                <p class="ml-[20px] text-[16px] font-semibold text-[#2E2E2E]">
+                    Masonry
+                </p>
+            </div>
+            <div
+                class="service-card bg-[#F7F7F7] shadow-md rounded-[22px] p-6 flex items-center"
+            >
+                <img
+                    src="/src/assets/services8.svg"
+                    alt="Service Icon"
+                    class="w-[40px] h-[40px]"
+                />
+                <p class="ml-[20px] text-[16px] font-semibold text-[#2E2E2E]">
+                    Plastering
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="flex flex-col lg:flex-row justify-center items-center mt-10 px-4 py-10"
+    >
+        <!-- Left Side -->
+        <div class="relative">
+            <div
+                class="absolute top-12 -left-2 w-[350px] lg:w-[410px] h-[210px] lg:h-[545px] bg-[#4559b5] rounded-[32px]"
+            >
+            </div>
+            <div
+                class="relative w-[350px] lg:w-[410px] h-[250px] lg:h-[575px] bg-cover bg-center rounded-[32px] z-10 image-box"
+                style="background-image: url('/src/assets/img2.png');"
+            >
+            </div>
+        </div>
+
+        <!-- Right Side -->
+        <div
+            class="flex flex-col justify-center items-center lg:items-start lg:ml-10 mt-6 lg:mt-0 px-4 sm:px-6 text-content"
+        >
+            <h2
+                class="text-[#070441] font-bold text-[24px] leading-snug mb-4 mt-4"
+            >
+                We Offer
+            </h2>
+
+            <div
+                class="flex gap-4 lg:gap-5 mb-8 justify-center items-center sm:justify-center sm:items-center options"
+            >
+                <!-- Option 1 -->
+                <div class="flex items-center gap-1 w-full sm:w-auto">
+                    <img
+                        src="/src/assets/dos.svg"
+                        alt="Competitive Prices Icon"
+                        class="w-6 h-6"
+                    />
+                    <span
+                        class="text-[#070441] lg:text-[14px] text-[11px] font-semibold"
+                        >Competitive Prices</span
+                    >
+                </div>
+
+                <!-- Option 2 -->
+                <div class="flex items-center gap-1 w-full sm:w-auto">
+                    <img
+                        src="/src/assets/offer1.svg"
+                        alt="Availability Icon"
+                        class="w-6 h-6"
+                    />
+                    <span
+                        class="text-[#070441] lg:text-[14px] text-[11px] font-semibold"
+                        >Availability</span
+                    >
+                </div>
+
+                <!-- Option 3 -->
+                <div
+                    class="flex items-center gap-1 w-full sm:w-auto sm:col-span-2 sm:justify-center"
+                >
+                    <img
+                        src="/src/assets/offer2.svg"
+                        alt="Payment Methods Icon"
+                        class="w-6 h-6"
+                    />
+                    <span
+                        class="text-[#070441] lg:text-[14px] text-[11px] font-semibold"
+                        >Multiple Payment Methods</span
+                    >
+                </div>
+            </div>
+
+            <h1
+                class="text-[#070441] text-center text-[32px] lg:text-5xl font-bold mb-4 leading-tight titleReady"
+            >
+                <span class="text-center underline decoration-[#4559b5]"
+                    >Ready for a Change?</span
+                >
+            </h1>
+
+            <p
+                class="text-[#070441] text-center font-semibold text-[13px] mb-6 description"
+            >
+                Our mission is to elevate the style, safety, and value of your
+                home, adapting to your preferences.
+            </p>
+
+            <a
+                href="/portfolio"
+                class="bg-[#070441] text-white font-semibold text-[15px] rounded-[32px] w-[250px] h-[55px] flex items-center justify-center transition hover:bg-[#1A1B50] cta-button"
+            >
+                View Our Projects
+            </a>
+        </div>
+    </section>
+
+    <section class="w-full h-auto flex flex-col items-center px-4 py-4 mt-20 popular-projects">
+        <h2 class="text-[24px] font-bold text-[#070441] mb-[40px] section-title">
+          Popular Projects
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 px-4 project-grid">
+          <!-- Proyecto 1 -->
+          <div class="flex flex-col items-center project-item">
+            <div class="bg-white w-[100px] h-[100px] flex items-center justify-center rounded-full project-icon">
+              <img
+                src="/src/assets/services2.svg"
+                alt="Icono de Plomería"
+                class="w-[50px] h-[50px]"
+              />
+            </div>
+            <p class="text-[14px] font-medium text-[#070441] mt-[10px] text-center project-text">
+              Plumbing
+            </p>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="flex flex-col items-center project-item">
+            <div class="bg-white w-[100px] h-[100px] flex items-center justify-center rounded-full project-icon">
+              <img
+                src="/src/assets/proyect2.svg"
+                alt="Icono de Remodelación de Cocina"
+                class="w-[50px] h-[50px]"
+              />
+            </div>
+            <p class="text-[14px] font-medium text-[#070441] mt-[10px] text-center project-text">
+              Kitchen Remodeling
+            </p>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="flex flex-col items-center project-item">
+            <div class="bg-white w-[100px] h-[100px] flex items-center justify-center rounded-full project-icon">
+              <img
+                src="/src/assets/proyect3.svg"
+                alt="Icono de Remodelación de Baño"
+                class="w-[50px] h-[50px]"
+              />
+            </div>
+            <p class="text-[14px] font-medium text-[#070441] mt-[10px] text-center project-text">
+              Bathroom Remodeling
+            </p>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="flex flex-col items-center project-item">
+            <div class="bg-white w-[100px] h-[100px] flex items-center justify-center rounded-full project-icon">
+              <img
+                src="/src/assets/proyect4.svg"
+                alt="Icono de Ventanas y Puertas"
+                class="w-[50px] h-[50px]"
+              />
+            </div>
+            <p class="text-[14px] font-medium text-[#070441] mt-[10px] text-center project-text">
+              Windows & Doors
+            </p>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="flex flex-col items-center project-item">
+            <div class="bg-white w-[100px] h-[100px] flex items-center justify-center rounded-full project-icon">
+              <img
+                src="/src/assets/services4.svg"
+                alt="Icono de Techos y Cubiertas"
+                class="w-[50px] h-[50px]"
+              />
+            </div>
+            <p class="text-[14px] font-medium text-[#070441] mt-[10px] text-center project-text">
+              Roofs & Covers
+            </p>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="flex flex-col items-center project-item">
+            <div class="bg-white w-[100px] h-[100px] flex items-center justify-center rounded-full project-icon">
+              <img
+                src="/src/assets/services3.svg"
+                alt="Icono de Trabajo Eléctrico"
+                class="w-[50px] h-[50px]"
+              />
+            </div>
+            <p class="text-[14px] font-medium text-[#070441] mt-[10px] text-center project-text">
+              Electrical Work
+            </p>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Divider -->
+    <div class="flex justify-center mt-20 divider">
+        <div class="w-full max-w-[1280px] h-[2px] bg-[#E0D5C4]"></div>
+    </div>
+
+    <!-- Espacio extra -->
+    <div class="mt-[80px]"></div>
+
+    <section
+        class="flex flex-col lg:flex-row-reverse justify-center items-center mt-10 px-4 py-10 key-benefits"
+    >
+        <!-- Right side (image) -->
+        <div class="relative video-container">
+            <div
+            class="absolute top-12 -left-2 w-[350px] lg:w-[410px] h-[210px] lg:h-[545px] bg-[#4559b5] rounded-[32px] bg-overlay"
+            >
+            </div>
+            <div
+            class="relative w-[350px] lg:w-[410px] h-[250px] lg:h-[575px] rounded-[32px] z-10 video-bg"
+            >
+            <video
+            class="w-full h-full object-cover rounded-[32px]"
+            controls
+            >
+            <source src="/src/assets/emagvideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+            </video>
+            </div>
+        </div>
+
+        <!-- Left side (text) -->
+        <div
+            class="flex flex-col justify-center w-auto items-center lg:items-start lg:mr-20 mt-6 lg:mt-0 text-container"
+        >
+            <!-- Main title -->
+            <div class="mb-12 title-container">
+                <h2
+                    class="text-[#070441] font-bold text-[24px] leading-snug mt-6 section-title"
+                >
+                    Key Benefits:
+                </h2>
+            </div>
+
+            <!-- List of benefits -->
+            <div class="lg:w-[700px] w-[350px] px-4 benefits-list">
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-2 benefit-item">
+                        <span
+                            class="w-1.5 h-1.5 bg-[#070441] rounded-full mt-2 bullet"
+                        ></span>
+                        <p
+                            class="text-[#070441] text-[14px] font-semibold benefit-text"
+                        >
+                            Quality and durability: We use high-quality
+                            materials chosen to withstand local conditions.
+                        </p>
+                    </li>
+                    <li class="flex items-start gap-2 benefit-item">
+                        <span
+                            class="w-1.5 h-1.5 bg-[#070441] rounded-full mt-2 bullet"
+                        ></span>
+                        <p
+                            class="text-[#070441] text-[14px] font-semibold benefit-text"
+                        >
+                            Proven experience: Years of experience and a solid
+                            reputation in the market.
+                        </p>
+                    </li>
+                    <li class="flex items-start gap-2 benefit-item">
+                        <span
+                            class="w-1.5 h-1.5 bg-[#070441] rounded-full mt-2 bullet"
+                        ></span>
+                        <p
+                            class="text-[#070441] text-[14px] font-semibold benefit-text"
+                        >
+                            Personalized attention: We make sure to listen to
+                            your needs and bring your vision to life.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="flex justify-center mt-10">
+        <div class="w-full max-w-[1280px] h-[2px] bg-[#E0D5C4]"></div>
+    </div>
+
+    <!-- Espacio extra -->
+    <div class="mt-[80px]"></div>
+
+    <script>
+        import { gsap } from "gsap";
+        import ScrollTrigger from "gsap/ScrollTrigger";
+      
+        gsap.registerPlugin(ScrollTrigger);
+      
+        document.addEventListener("DOMContentLoaded", () => {
+          // Opciones comunes SIN scrub para animaciones que se reproducen una sola vez
+          const commonTriggerOptions = {
+            start: "top 85%",
+            end: "top 40%",
+            toggleActions: "play none none none",
+            once: true,
+          };
+      
+          // Animación para títulos principales
+          gsap.from(
+            [".title", ".headline", ".titleReady", ".section-title"],
+            {
+              opacity: 0,
+              y: -50,
+              duration: 1.2,
+              ease: "power3.out",
+              scrollTrigger: {
+                trigger: ".title",
+                ...commonTriggerOptions,
+              },
+            }
+          );
+      
+          // Animación para image-box (si quieres que se ejecute solo una vez, sin reverso)
+          gsap.from(".image-box", {
+            opacity: 0,
+            x: -100,
+            duration: 1.5,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: ".image-box",
+              start: "top 80%",
+              end: "top 30%",
+              toggleActions: "play none none none",
+              once: true,
+            },
+          });
+      
+          // Animación para botones de llamada a la acción
+          gsap.from(".cta-button", {
+            opacity: 0,
+            scale: 0.9,
+            duration: 1.2,
+            ease: "elastic.out(1, 0.6)",
+            scrollTrigger: {
+              trigger: ".cta-button",
+              ...commonTriggerOptions,
+            },
+          });
+      
+          // Animación para imágenes
+          gsap.from([".image", ".image-box", ".image-container"], {
+            opacity: 0,
+            x: 100,
+            duration: 1.5,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: ".image",
+              ...commonTriggerOptions,
+            },
+          });
+      
+          // Animación para subtítulos y descripciones
+          gsap.from([".services-title", ".description"], {
+            opacity: 0,
+            scale: 0.9,
+            duration: 1.2,
+            ease: "expo.out",
+            scrollTrigger: {
+              trigger: ".services-title",
+              ...commonTriggerOptions,
+            },
+          });
+      
+          // Animación para tarjetas de servicio
+          gsap.from(".service-card", {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            stagger: 0.15,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: ".service-card",
+              ...commonTriggerOptions,
+            },
+          });
+      
+          // Animación para lista de opciones
+          gsap.from(".options div", {
+            opacity: 0,
+            y: 30,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: ".options",
+              ...commonTriggerOptions,
+            },
+          });
+      
+          // Animación para proyectos
+          gsap.from(".project-item", {
+            opacity: 0,
+            y: 20,
+            duration: 1.2,
+            stagger: 0.2,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: ".project-item",
+              start: "top 85%",
+              end: "top 50%",
+              toggleActions: "play none none none",
+              once: true,
+            },
+          });
+      
+          // Animación para lista de beneficios
+          gsap.from(".benefit-item", {
+            opacity: 0,
+            y: 20,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: ".benefits-list",
+              ...commonTriggerOptions,
+            },
+          });
+        });
+      </script>
+</Layout>      
