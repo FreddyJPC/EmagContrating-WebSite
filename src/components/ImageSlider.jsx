@@ -8,12 +8,12 @@ import "swiper/css/effect-coverflow";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  { src: "/src/assets/before1.png", name: "Before" },
-  { src: "/src/assets/working1.png", name: "Working" },
-  { src: "/src/assets/after1.png", name: "After" },
-  { src: "/src/assets/roofing.png", name: "Roofing" },
-  { src: "/src/assets/windows.png", name: "Windows" },
-  { src: "/src/assets/bathroom.png", name: "Bathrooms" },
+  { src: "/img/before1.png", name: "Before" },
+  { src: "/img/working1.png", name: "Working" },
+  { src: "/img/after1.png", name: "After" },
+  { src: "/img/roofing.png", name: "Roofing" },
+  { src: "/img/windows.png", name: "Windows" },
+  { src: "/img/bathroom.png", name: "Bathrooms" },
 ];
 
 export default function ImageSlider() {
